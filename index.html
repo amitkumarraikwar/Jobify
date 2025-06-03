@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="nav1">
+        <span><i class="fa-solid fa-briefcase"></i></span>
+        <p>Jobify</p>
+      </div>
+      <div class="nav2">
+        <a href="#">Browse Jobs</a>
+        <select name="Categories" id="Categories">
+          <option value="Technology">Technology</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Design">Design</option>
+          <option value="Finance">Finance</option>
+        </select>
+        <a href="#">Companies</a>
+      </div>
+      <div class="nav3">
+        <button id="login">Login</button>
+        <button id="register">Register</button>
+      </div>
+    </section>
+
+    <section id="hero">
+      <h1>Find Your Dream Job Today</h1>
+      <p>
+        Connect with top companies hiring now. Thousands of jobs in tech,
+        marketing, design and more.
+      </p>
+      <div class="search-bar">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" placeholder="Job title, keywords, or company" />
+        <button type="submit" id="search-jobs">Search Jobs</button>
+      </div>
+      <div class="popular">
+        <span>Popular:</span>
+        <a href="#">Developer</a>
+        <a href="#">Designer</a>
+        <a href="#">Marketing</a>
+        <a href="#">Remote</a>
+      </div>
+    </section>
+
+    <section id="statistics">
+      <div class="grouping">
+        <div class="job-listings">
+          <h1>10k+</h1>
+          <span>Job Listings</span>
+        </div>
+        <div class="companies">
+          <h1>8k+</h1>
+          <span>Companies</span>
+        </div>
+        <div class="job-seekers">
+          <h1>15M+</h1>
+          <span>Job Seekers</span>
+        </div>
+        <div class="success-rate">
+          <h1>95%</h1>
+          <span>Success Rate</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-jobs">
+      <div class="job-card">
+        <span class="badge">Full-time</span>
+        <span class="job-title">Senior React Developer</span>
+        <span class="company-name">TechCorp</span>
+
+        <div class="meta">
+          <span>San Francisco, CA (Remote)</span>
+          <span>3–5 years</span>
+          <span>$120,000 - 150,000 USD</span>
+          <span>about 2 years ago</span>
+        </div>
+
+        <p class="description">
+          We are looking for a Senior React Developer to join our frontend team.
+          You will be…
+        </p>
+
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Redux</span>
+          <span class="tag">+3 more</span>
+        </div>
+
+        <div class="deadline-dates">
+          <span class="deadline">Deadline: 6/11/2023</span>
+          <button class="view-btn">View Details</button>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <span class="badge">Full-time</span>
+        <span class="job-title">UX/UI Designer</span>
+        <span class="company-name">DesignHub</span>
+
+        <div class="meta">
+          <span>New York, NY</span>
+          <span>2-4 years</span>
+          <span>$85,000 - 110,000 USD</span>
+          <span>about 2 years ago</span>
+        </div>
+
+        <p class="description">
+          DesignHub is seeking a talented UX/UI Designer to create amazing
+          user...
+        </p>
+
+        <div class="tags">
+          <span class="tag">UI Design</span>
+          <span class="tag">UX Design</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Sketch</span>
+          <span class="tag">+3 more</span>
+        </div>
+
+        <div class="deadline-dates">
+          <span class="deadline">Deadline: 6/16/2023</span>
+          <button class="view-btn">View Details</button>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <span class="badge">Full-time</span>
+        <span class="job-title">Data Scientist</span>
+        <span class="company-name">DataInsights</span>
+
+        <div class="meta">
+          <span>Remote</span>
+          <span>3-6 years</span>
+          <span>$110,000 - 140,000 USD</span>
+          <span>about 2 years ago</span>
+        </div>
+
+        <p class="description">
+          DataInsights is looking for a Data Scientist to join our growing team.
+          You....
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">+3 more</span>
+        </div>
+
+        <div class="deadline-dates">
+          <span class="deadline">Deadline: 6/09/2023</span>
+          <button class="view-btn">View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="popular-job-categories">
+      <h1>Popular Job Categories</h1>
+      <span
+        >Explore jobs by category and find the perfect role that matches your
+        skills and interests.</span
+      >
+
+      <div class="browse-jobs">
+        <span><i class="fa-solid fa-briefcase"></i></span>
+        <h3>Technology</h3>
+        <span>1,204 jobs available</span>
+        <a href="#">Browse Jobs</a>
+      </div>
+
+      <div class="browse-jobs">
+        <span><i class="fa-solid fa-signal"></i></span>
+        <h3>Marketing</h3>
+        <span>856 jobs available</span>
+        <a href="#">Browse Jobs</a>
+      </div>
+
+      <div class="browse-jobs">
+        <span><i class="fa-solid fa-swatchbook"></i></span>
+        <h3>Design</h3>
+        <span>643 jobs available</span>
+        <a href="#">Browse Jobs</a>
+      </div>
+
+      <div class="browse-jobs">
+        <span><i class="fa-solid fa-coins"></i></span>
+        <h3>Finance</h3>
+        <span>548 jobs available</span>
+        <a href="#">Browse Jobs</a>
+      </div>
+
+      <button id="browse-all-categories">Browse All Categories</button>
+    </section>
+
+    <section id="approch">
+      <h1>Ready to Take Your Career to the Next Level?</h1>
+      <p>
+        Join thousands of job seekers who have found their dream jobs through
+        Jobify.
+      </p>
+      <div class="btns">
+        <button type="submit" id="create-account">Create Account</button>
+        <button type="submit" id="browse-jobs-btn">Browse Jobs</button>
+      </div>
+    </section>
+
+    <section id="success-stories">
+      <h1>Success Stories</h1>
+      <span
+        >Hear from people who found their dream jobs through our platform.</span
+      >
+      <div class="testimonials-group">
+        <div class="testimonials">
+          <img src="" alt="" class="testimonials-img" />
+          <h3>John Smith</h3>
+          <span>Software Engineer at Google</span>
+          <p>
+            "Jobify made my job search incredibly easy. Within two weeks, I had
+            multiple interviews and landed my dream job at Google."
+          </p>
+        </div>
+
+        <div class="testimonials">
+          <img src="" alt="" class="testimonials-img" />
+          <h3>John Smith</h3>
+          <span>Software Engineer at Google</span>
+          <p>
+            "Jobify made my job search incredibly easy. Within two weeks, I had
+            multiple interviews and landed my dream job at Google."
+          </p>
+        </div>
+
+        <div class="testimonials">
+          <img src="" alt="" class="testimonials-img" />
+          <h3>John Smith</h3>
+          <span>Software Engineer at Google</span>
+          <p>
+            "Jobify made my job search incredibly easy. Within two weeks, I had
+            multiple interviews and landed my dream job at Google."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="social-info">
+        <div class="nav1">
+          <span><i class="fa-solid fa-briefcase"></i></span>
+          <p>Jobify</p>
+        </div>
+        <p>
+          Connecting talented professionals with the best companies worldwide.
+        </p>
+        <div class="icons">
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-linkedin-in"></i></span>
+        </div>
+      </div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <a href="">Browse Jobs</a>
+        <a href="">Companies</a>
+        <a href="">Job Categories</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+      </div>
+      <div class="job-seekers">
+        <h3>Job Seekers</h3>
+        <a href="">Create Account</a>
+        <a href="">Profile</a>
+        <a href="">My Applications</a>
+        <a href="">Saved Jobs</a>
+        <a href="">Career Resources</a>
+      </div>
+      <div class="employers">
+        <h3>Employers</h3>
+        <a href="">Register as Employer</a>
+        <a href="">Post a Job</a>
+        <a href="">Employer Dashboard</a>
+        <a href="">Pricing Plans</a>
+        <a href="">Employer Resources</a>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section id="after-footer">
+      <span>© 2025 Jobify. All rights reserved.</span>
+      <div class="terms">
+        <a href="">Privacy Policy</a>
+        <a href="">Terms of Service</a>
+        <a href="">Cookie Policy</a>
+      </div>
+    </section>
+  </body>
+</html>

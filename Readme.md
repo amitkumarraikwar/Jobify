@@ -44,7 +44,7 @@ Jobify is a modern, feature-rich job portal built with React and TypeScript. It 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/jobify.git
+git clone https://github.com/amitkumarraikwar/jobify.git
 cd jobify
 ```
 
@@ -130,7 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Project Link: [https://github.com/yourusername/jobify](https://github.com/yourusername/jobify)
+Project Link: [https://github.com/amitkumarraikwar/jobify](https://github.com/amitkumarraikwar/jobify)
 
 ## 📸 Screenshots
 

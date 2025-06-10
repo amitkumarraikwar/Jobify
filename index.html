@@ -3,306 +3,703 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Jobify - Find Your Dream Job Today</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <section id="navbar">
-      <div class="nav1">
-        <span><i class="fa-solid fa-briefcase"></i></span>
-        <p>Jobify</p>
-      </div>
-      <div class="nav2">
-        <a href="#">Browse Jobs</a>
-        <select name="Categories" id="Categories">
-          <option value="Technology">Technology</option>
-          <option value="Marketing">Marketing</option>
-          <option value="Design">Design</option>
-          <option value="Finance">Finance</option>
-        </select>
-        <a href="#">Companies</a>
-      </div>
-      <div class="nav3">
-        <button id="login">Login</button>
-        <button id="register">Register</button>
-      </div>
-    </section>
+  <body class="bg-[#397FF5]">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-briefcase text-[#397FF5] text-xl"></i>
+            <span class="text-xl font-bold text-[#397FF5]">Jobify</span>
+          </div>
 
-    <section id="hero">
-      <h1>Find Your Dream Job Today</h1>
-      <p>
-        Connect with top companies hiring now. Thousands of jobs in tech,
-        marketing, design and more.
-      </p>
-      <div class="search-bar">
-        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-        <input type="text" placeholder="Job title, keywords, or company" />
-        <button type="submit" id="search-jobs">Search Jobs</button>
-      </div>
-      <div class="popular">
-        <span>Popular:</span>
-        <a href="#">Developer</a>
-        <a href="#">Designer</a>
-        <a href="#">Marketing</a>
-        <a href="#">Remote</a>
-      </div>
-    </section>
+          <!-- Navigation Links -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#"
+              class="text-gray-700 hover:text-[#387DF4] transition-colors"
+              >Browse Jobs</a
+            >
+            <div class="relative">
+              <select
+                class="bg-white border-gray-300 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#387DF4]"
+              >
+                <option>Categories</option>
+                <option>Technology</option>
+                <option>Marketing</option>
+                <option>Design</option>
+                <option>Finance</option>
+              </select>
+            </div>
+            <a
+              href="#"
+              class="text-gray-700 hover:text-[#387DF4] transition-colors"
+              >Companies</a
+            >
+          </div>
 
-    <section id="statistics">
-      <div class="grouping">
-        <div class="job-listings">
-          <h1>10k+</h1>
-          <span>Job Listings</span>
-        </div>
-        <div class="companies">
-          <h1>8k+</h1>
-          <span>Companies</span>
-        </div>
-        <div class="job-seekers">
-          <h1>15M+</h1>
-          <span>Job Seekers</span>
-        </div>
-        <div class="success-rate">
-          <h1>95%</h1>
-          <span>Success Rate</span>
+          <!-- Auth Buttons -->
+          <div class="flex items-center space-x-4">
+            <button
+              class="text-gray-700 hover:text-[#387DF4] transition-colors"
+            >
+              Login
+            </button>
+            <button
+              class="bg-[#397FF5] text-white px-4 py-2 rounded-md hover:bg-jobify-light-blue transition-colors"
+            >
+              Register
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section id="featured-jobs">
-      <div class="job-card">
-        <span class="badge">Full-time</span>
-        <span class="job-title">Senior React Developer</span>
-        <span class="company-name">TechCorp</span>
-
-        <div class="meta">
-          <span>San Francisco, CA (Remote)</span>
-          <span>3–5 years</span>
-          <span>$120,000 - 150,000 USD</span>
-          <span>about 2 years ago</span>
-        </div>
-
-        <p class="description">
-          We are looking for a Senior React Developer to join our frontend team.
-          You will be…
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-[#387DF4] to-jobify-light-blue text-white py-20"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Find Your Dream Job Today
+        </h1>
+        <p class="text-xl mb-8 text-blue-100">
+          Connect with top companies hiring now. Thousands of jobs in tech,
+          marketing, design and more.
         </p>
 
-        <div class="tags">
-          <span class="tag">React</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Redux</span>
-          <span class="tag">+3 more</span>
+        <!-- Search Bar -->
+        <div
+          class="bg-white rounded-lg shadow-lg p-2 flex items-center max-w-2xl mx-auto mb-8"
+        >
+          <i class="fas fa-search text-gray-400 ml-4"></i>
+          <input
+            type="text"
+            placeholder="Job title, keywords, or company"
+            class="flex-1 px-4 py-3 text-gray-700 focus:outline-none"
+          />
+          <button
+            class="bg-[#397FF5] text-white px-6 py-3 rounded-md hover:bg-jobify-light-blue transition-colors"
+          >
+            Search Jobs
+          </button>
         </div>
 
-        <div class="deadline-dates">
-          <span class="deadline">Deadline: 6/11/2023</span>
-          <button class="view-btn">View Details</button>
-        </div>
-      </div>
-
-      <div class="job-card">
-        <span class="badge">Full-time</span>
-        <span class="job-title">UX/UI Designer</span>
-        <span class="company-name">DesignHub</span>
-
-        <div class="meta">
-          <span>New York, NY</span>
-          <span>2-4 years</span>
-          <span>$85,000 - 110,000 USD</span>
-          <span>about 2 years ago</span>
-        </div>
-
-        <p class="description">
-          DesignHub is seeking a talented UX/UI Designer to create amazing
-          user...
-        </p>
-
-        <div class="tags">
-          <span class="tag">UI Design</span>
-          <span class="tag">UX Design</span>
-          <span class="tag">Figma</span>
-          <span class="tag">Sketch</span>
-          <span class="tag">+3 more</span>
-        </div>
-
-        <div class="deadline-dates">
-          <span class="deadline">Deadline: 6/16/2023</span>
-          <button class="view-btn">View Details</button>
-        </div>
-      </div>
-
-      <div class="job-card">
-        <span class="badge">Full-time</span>
-        <span class="job-title">Data Scientist</span>
-        <span class="company-name">DataInsights</span>
-
-        <div class="meta">
-          <span>Remote</span>
-          <span>3-6 years</span>
-          <span>$110,000 - 140,000 USD</span>
-          <span>about 2 years ago</span>
-        </div>
-
-        <p class="description">
-          DataInsights is looking for a Data Scientist to join our growing team.
-          You....
-        </p>
-
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Data Analysis</span>
-          <span class="tag">+3 more</span>
-        </div>
-
-        <div class="deadline-dates">
-          <span class="deadline">Deadline: 6/09/2023</span>
-          <button class="view-btn">View Details</button>
+        <!-- Popular Tags -->
+        <div
+          class="flex flex-wrap justify-center items-center space-x-2 text-blue-100"
+        >
+          <span>Popular:</span>
+          <a href="#" class="hover:text-white transition-colors hover:underline"
+            >Developer</a
+          >
+          <a href="#" class="hover:text-white transition-colors hover:underline"
+            >Designer</a
+          >
+          <a href="#" class="hover:text-white transition-colors hover:underline"
+            >Marketing</a
+          >
+          <a href="#" class="hover:text-white transition-colors hover:underline"
+            >Remote</a
+          >
         </div>
       </div>
     </section>
 
-    <section id="popular-job-categories">
-      <h1>Popular Job Categories</h1>
-      <span
-        >Explore jobs by category and find the perfect role that matches your
-        skills and interests.</span
-      >
-
-      <div class="browse-jobs">
-        <span><i class="fa-solid fa-briefcase"></i></span>
-        <h3>Technology</h3>
-        <span>1,204 jobs available</span>
-        <a href="#">Browse Jobs</a>
-      </div>
-
-      <div class="browse-jobs">
-        <span><i class="fa-solid fa-signal"></i></span>
-        <h3>Marketing</h3>
-        <span>856 jobs available</span>
-        <a href="#">Browse Jobs</a>
-      </div>
-
-      <div class="browse-jobs">
-        <span><i class="fa-solid fa-swatchbook"></i></span>
-        <h3>Design</h3>
-        <span>643 jobs available</span>
-        <a href="#">Browse Jobs</a>
-      </div>
-
-      <div class="browse-jobs">
-        <span><i class="fa-solid fa-coins"></i></span>
-        <h3>Finance</h3>
-        <span>548 jobs available</span>
-        <a href="#">Browse Jobs</a>
-      </div>
-
-      <button id="browse-all-categories">Browse All Categories</button>
-    </section>
-
-    <section id="approch">
-      <h1>Ready to Take Your Career to the Next Level?</h1>
-      <p>
-        Join thousands of job seekers who have found their dream jobs through
-        Jobify.
-      </p>
-      <div class="btns">
-        <button type="submit" id="create-account">Create Account</button>
-        <button type="submit" id="browse-jobs-btn">Browse Jobs</button>
+    <!-- Statistics -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <h3 class="text-3xl font-bold text-[#387DF4] mb-2">10k+</h3>
+            <p class="text-gray-600">Job Listings</p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-[#387DF4] mb-2">8k+</h3>
+            <p class="text-gray-600">Companies</p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-[#387DF4] mb-2">15M+</h3>
+            <p class="text-gray-600">Job Seekers</p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-[#387DF4] mb-2">95%</h3>
+            <p class="text-gray-600">Success Rate</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="success-stories">
-      <h1>Success Stories</h1>
-      <span
-        >Hear from people who found their dream jobs through our platform.</span
-      >
-      <div class="testimonials-group">
-        <div class="testimonials">
-          <img src="" alt="" class="testimonials-img" />
-          <h3>John Smith</h3>
-          <span>Software Engineer at Google</span>
-          <p>
-            "Jobify made my job search incredibly easy. Within two weeks, I had
-            multiple interviews and landed my dream job at Google."
+    <!-- Featured Jobs -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Jobs</h2>
+          <div class="flex justify-end">
+            <a href="#" class="text-[#387DF4] hover:text-jobify-light-blue"
+              >View All Jobs</a
+            >
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Job Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                >Full-time</span
+              >
+              <i
+                class="fas fa-heart text-gray-300 hover:text-red-500 cursor-pointer"
+              ></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Senior React Developer
+            </h3>
+            <p class="text-gray-600 mb-4">TechCorp</p>
+
+            <div class="space-y-2 mb-4 text-sm text-gray-600">
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt w-4"></i>
+                <span>San Francisco, CA (Remote)</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-briefcase w-4"></i>
+                <span>3-5 years</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-dollar-sign w-4"></i>
+                <span>$120,000 - 150,000 USD</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-clock w-4"></i>
+                <span>about 2 years ago</span>
+              </div>
+            </div>
+
+            <p class="text-gray-600 mb-4">
+              We are looking for a Senior React Developer to join our frontend
+              team. You will be...
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs"
+                >React</span
+              >
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs"
+                >JavaScript</span
+              >
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs"
+                >TypeScript</span
+              >
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs"
+                >Redux</span
+              >
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs"
+                >+3 more</span
+              >
+            </div>
+
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-500">Deadline: 6/11/2023</span>
+              <button
+                class="bg-[#387DF4] text-white px-4 py-2 rounded-md hover:bg-jobify-light-blue transition-colors"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                >Full-time</span
+              >
+              <i
+                class="fas fa-heart text-gray-300 hover:text-red-500 cursor-pointer"
+              ></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              UX/UI Designer
+            </h3>
+            <p class="text-gray-600 mb-4">DesignHub</p>
+
+            <div class="space-y-2 mb-4 text-sm text-gray-600">
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt w-4"></i>
+                <span>New York, NY</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-briefcase w-4"></i>
+                <span>2-4 years</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-dollar-sign w-4"></i>
+                <span>$85,000 - 110,000 USD</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-clock w-4"></i>
+                <span>about 2 years ago</span>
+              </div>
+            </div>
+
+            <p class="text-gray-600 mb-4">
+              DesignHub is seeking a talented UX/UI Designer to create amazing
+              user...
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                >UI Design</span
+              >
+              <span
+                class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                >UX Design</span
+              >
+              <span
+                class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                >Figma</span
+              >
+              <span
+                class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                >Sketch</span
+              >
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs"
+                >+3 more</span
+              >
+            </div>
+
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-500">Deadline: 6/16/2023</span>
+              <button
+                class="bg-[#387DF4] text-white px-4 py-2 rounded-md hover:bg-jobify-light-blue transition-colors"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Job Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                >Full-time</span
+              >
+              <i
+                class="fas fa-heart text-gray-300 hover:text-red-500 cursor-pointer"
+              ></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Data Scientist
+            </h3>
+            <p class="text-gray-600 mb-4">DataInsights</p>
+
+            <div class="space-y-2 mb-4 text-sm text-gray-600">
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt w-4"></i>
+                <span>Remote</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-briefcase w-4"></i>
+                <span>3-6 years</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-dollar-sign w-4"></i>
+                <span>$110,000 - 140,000 USD</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-clock w-4"></i>
+                <span>about 2 years ago</span>
+              </div>
+            </div>
+
+            <p class="text-gray-600 mb-4">
+              DataInsights is looking for a Data Scientist to join our growing
+              team. You....
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs"
+                >Python</span
+              >
+              <span
+                class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs"
+                >Machine Learning</span
+              >
+              <span
+                class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs"
+                >SQL</span
+              >
+              <span
+                class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs"
+                >Data Analysis</span
+              >
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs"
+                >+3 more</span
+              >
+            </div>
+
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-500">Deadline: 6/09/2023</span>
+              <button
+                class="bg-[#387DF4] text-white px-4 py-2 rounded-md hover:bg-jobify-light-blue transition-colors"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Job Categories -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Popular Job Categories
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Explore jobs by category and find the perfect role that matches your
+            skills and interests.
           </p>
         </div>
 
-        <div class="testimonials">
-          <img src="" alt="" class="testimonials-img" />
-          <h3>John Smith</h3>
-          <span>Software Engineer at Google</span>
-          <p>
-            "Jobify made my job search incredibly easy. Within two weeks, I had
-            multiple interviews and landed my dream job at Google."
-          </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <!-- Technology -->
+          <div
+            class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-laptop-code text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Technology</h3>
+            <p class="text-gray-600 mb-4">1,204 jobs available</p>
+            <a
+              href="#"
+              class="text-[#387DF4] hover:text-jobify-light-blue font-medium"
+              >Browse Jobs</a
+            >
+          </div>
+
+          <!-- Marketing -->
+          <div
+            class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-chart-line text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Marketing</h3>
+            <p class="text-gray-600 mb-4">856 jobs available</p>
+            <a
+              href="#"
+              class="text-[#387DF4] hover:text-jobify-light-blue font-medium"
+              >Browse Jobs</a
+            >
+          </div>
+
+          <!-- Design -->
+          <div
+            class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-palette text-purple-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Design</h3>
+            <p class="text-gray-600 mb-4">643 jobs available</p>
+            <a
+              href="#"
+              class="text-[#387DF4] hover:text-jobify-light-blue font-medium"
+              >Browse Jobs</a
+            >
+          </div>
+
+          <!-- Finance -->
+          <div
+            class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow"
+          >
+            <div
+              class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-coins text-yellow-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Finance</h3>
+            <p class="text-gray-600 mb-4">548 jobs available</p>
+            <a
+              href="#"
+              class="text-[#387DF4] hover:text-jobify-light-blue font-medium"
+              >Browse Jobs</a
+            >
+          </div>
         </div>
 
-        <div class="testimonials">
-          <img src="" alt="" class="testimonials-img" />
-          <h3>John Smith</h3>
-          <span>Software Engineer at Google</span>
-          <p>
-            "Jobify made my job search incredibly easy. Within two weeks, I had
-            multiple interviews and landed my dream job at Google."
-          </p>
+        <div class="text-center">
+          <button
+            class="bg-[#387DF4] text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Browse All Categories
+          </button>
         </div>
       </div>
     </section>
 
-    <section id="footer">
-      <div class="social-info">
-        <div class="nav1">
-          <span><i class="fa-solid fa-briefcase"></i></span>
-          <p>Jobify</p>
-        </div>
-        <p>
-          Connecting talented professionals with the best companies worldwide.
+    <!-- CTA Section -->
+    <section
+      class="py-16 bg-gradient-to-r from-cyan-500 to-blue-600 text-white"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">
+          Ready to Take Your Career to the Next Level?
+        </h2>
+        <p class="text-xl mb-8 text-blue-100">
+          Join thousands of job seekers who have found their dream jobs through
+          Jobify.
         </p>
-        <div class="icons">
-          <span><i class="fa-brands fa-facebook"></i></span>
-          <span><i class="fa-brands fa-twitter"></i></span>
-          <span><i class="fa-brands fa-instagram"></i></span>
-          <span><i class="fa-brands fa-linkedin-in"></i></span>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"
+          >
+            Create Account
+          </button>
+          <button
+            class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-600 transition-colors"
+          >
+            Browse Jobs
+          </button>
         </div>
       </div>
-      <div class="quick-links">
-        <h3>Quick Links</h3>
-        <a href="">Browse Jobs</a>
-        <a href="">Companies</a>
-        <a href="">Job Categories</a>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
-      </div>
-      <div class="job-seekers">
-        <h3>Job Seekers</h3>
-        <a href="">Create Account</a>
-        <a href="">Profile</a>
-        <a href="">My Applications</a>
-        <a href="">Saved Jobs</a>
-        <a href="">Career Resources</a>
-      </div>
-      <div class="employers">
-        <h3>Employers</h3>
-        <a href="">Register as Employer</a>
-        <a href="">Post a Job</a>
-        <a href="">Employer Dashboard</a>
-        <a href="">Pricing Plans</a>
-        <a href="">Employer Resources</a>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Success Stories</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Hear from people who found their dream jobs through our platform.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center">
+            <div
+              class="w-16 h-16 bg-[url(https://img.freepik.com/free-photo/glad-pretty-woman-with-curly-pony-tail-has-charming-smile-wears-striped-sweater-poses_273609-8851.jpg?semt=ais_hybrid&w=740)] bg-cover rounded-full mx-auto mb-4"
+            ></div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-1">John Smith</h3>
+            <p class="text-gray-600 mb-4">Software Engineer at Google</p>
+            <p class="text-gray-700 italic">
+              "Jobify made my job search incredibly easy. Within two weeks, I
+              had multiple interviews and landed my dream job at Google."
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center">
+            <div
+              class="w-16 h-16 bg-[url(https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW4lMjBiZWluZ3xlbnwwfHwwfHx8MA%3D%3D)] bg-cover rounded-full mx-auto mb-4"
+            ></div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-1">
+              Sarah Johnson
+            </h3>
+            <p class="text-gray-600 mb-4">Marketing Manager at Apple</p>
+            <p class="text-gray-700 italic">
+              "After struggling for months, I found Jobify and everything
+              changed. The platform connected me with exactly the right
+              opportunities."
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center">
+            <div
+              class="w-16 h-16 bg-cover bg-[url(https://img.freepik.com/free-photo/portrait-smiling-charming-young-man-grey-t-shirt-standing-against-plain-background_23-2148213406.jpg?semt=ais_hybrid&w=740)] rounded-full mx-auto mb-4"
+            ></div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-1">David Chen</h3>
+            <p class="text-gray-600 mb-4">UX Designer at Netflix</p>
+            <p class="text-gray-700 italic">
+              "The quality of job listings on Jobify is unmatched. I was able to
+              find and apply for positions that truly matched my skills and
+              interests."
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <div class="line"></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fas fa-briefcase text-[#387DF4] text-xl"></i>
+              <span class="text-xl font-bold">Jobify</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Connecting talented professionals with the best companies
+              worldwide.
+            </p>
+            <div class="flex space-x-4">
+              <i
+                class="fab fa-facebook text-gray-400 hover:text-white cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-twitter text-gray-400 hover:text-white cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-instagram text-gray-400 hover:text-white cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-linkedin text-gray-400 hover:text-white cursor-pointer"
+              ></i>
+            </div>
+          </div>
 
-    <section id="after-footer">
-      <span>© 2025 Jobify. All rights reserved.</span>
-      <div class="terms">
-        <a href="">Privacy Policy</a>
-        <a href="">Terms of Service</a>
-        <a href="">Cookie Policy</a>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <div class="space-y-2">
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Browse Jobs</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Companies</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Job Categories</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >About Us</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <!-- Job Seekers -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Job Seekers</h3>
+            <div class="space-y-2">
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Create Account</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Profile</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >My Applications</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Saved Jobs</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Career Resources</a
+              >
+            </div>
+          </div>
+
+          <!-- Employers -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Employers</h3>
+            <div class="space-y-2">
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Register as Employer</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Post a Job</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Employer Dashboard</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Pricing Plans</a
+              >
+              <a
+                href="#"
+                class="block text-gray-400 hover:text-white transition-colors"
+                >Employer Resources</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400">© 2025 Jobify. All rights reserved.</p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              >Terms of Service</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
